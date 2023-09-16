@@ -34,3 +34,16 @@
 ## Annotation
 - @InitBinder : 데이터를 변환하고자 할 때 문제가 생기는 경우에 자동으로 해결해줌
   - 예제 : SampleController -> initBinder
+- @ModelAttribute는 강제로 전달받은 파라미터를 Model 담아서 전달하도록 할 때 사용에
+  - 예제 : SampleController -> ex04
+  
+## ResponseEntity
+- 스프링 MVC의 사상에서는 HttpServletRequest/HttpServletResponse를 대체하여 ResponseEntity를 통해 헤더 정보나 데이터 전달
+
+## fileupload
+- Servlet 2.5에서는 commons의 파일 업로드나 cos.jar을 이용해야 함
+- Servlet 3.0(Tomcat 7.0) 이후에는 기본적으로 업로드 되는 파일을 처리할 수 있는 기능이 추가
+
+## ControllerAdvice
+- @ControllerAdvice는 AOP (Aspect Oriented Programming)을 이용하는 방식
+  - AOP : 공통적인 관심사는 분리 하자는 개념

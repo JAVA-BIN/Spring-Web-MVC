@@ -2,6 +2,8 @@ package com.spring.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
+import javax.servlet.ServletRegistration;
+
 // AbstractAnnotationConfigDispatcherServletInitializer를 상속받는다
 public class WebConfig extends AbstractAnnotationConfigDispatcherServletInitializer {
 
@@ -18,5 +20,10 @@ public class WebConfig extends AbstractAnnotationConfigDispatcherServletInitiali
     @Override
     protected String[] getServletMappings() {
         return new String[] {"/"};
+    }
+
+    @Override
+    protected void customizeRegistration(ServletRegistration.Dynamic registration) {
+        registration.setInitParameter("throwExceptionIfNoHandlerFound", "true");
     }
 }

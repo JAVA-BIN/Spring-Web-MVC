@@ -6,7 +6,6 @@
     <title>Insert title here</title>
 </head>
 <body>
-<h2>SAMPLEDTO ${sampleDTO}</h2>
-<h2>PAGE ${page}</h2>
+<h1>해당 URL은 존재하지 않습니다.</h1>
 </body>
 </html>
